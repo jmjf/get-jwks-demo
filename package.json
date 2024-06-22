@@ -1,0 +1,25 @@
+{
+  "name": "get-jwks-demo",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "cjs:require": "node --loader ts-node testRequire.cjs",
+    "cjs:mjs": "node --loader ts-node testMJS.mjs",
+    "cjs:ts": "ts-node testTS.ts",
+    "esm:mjs": "node --loader ts-node/esm testMJS.mjs",
+    "esm:ts": "node --loader ts-node/esm testTS.ts",
+    "build:cjs": "rimraf lib-cjs && tsc --project ./tsconfig-cjs.json",
+    "build:esm": "rimraf lib-esm && tsc --project ./tsconfig-esm.json"
+  },
+  "author": "jmjf",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.14.8",
+    "rimraf": "^5.0.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.2"
+  },
+  "dependencies": {
+    "get-jwks": "^9.0.1"
+  }
+}

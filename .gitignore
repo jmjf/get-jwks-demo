@@ -1,0 +1,5 @@
+node_modules
+.devcontainer
+lib-cjs
+lib-esm
+tsconfig.json
